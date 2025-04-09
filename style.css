@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url('school.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5f5; /* Lighter text color for better readability */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle shadow for contrast */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(55, 54, 54, 0.6); /* Semi-transparent background for better contrast */
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #8cc3fa;/*e the header text is bright and readable */
+}
+
+nav a {
+  color: #f5f5f5; /* Lighter text for navigation links */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #f4f0ef; /* Highlight color on hover */
+  transform: scale(1.1);
+}
+
+main {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(247, 217, 217, 0.5); /* Semi-transparent background for better readability */
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ffcccb; /* Slightly lighter heading color */
+}
+
+main p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #f5f5f5; /* Lighter paragraph text */
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007BFF; /* Blue button */
+  color: #FFFFFF; /* White text */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056B3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(99, 97, 97, 0.6);
+  font-size: 0.8rem;
+  color: #f5f5f5; /* Lighter footer text */
+}
+/* Add styles for the main heading on the mission page */
+main h2 {
+  font-size: 2rem; /* Slightly larger font size for emphasis */
+  margin-bottom: 20px;
+  color: #8cc3fa;/*lighted color for the mission heading */
+}
+
+/* Add styles for paragraphs on the mission page */
+main p {
+  font-size: 1rem; /* Consistent font size */
+  line-height: 1.6; /* Improve readability with better line spacing */
+  margin-bottom: 20px;
+  color: #fff; /* Ensure text is readable on the dark background */
+}
+
+/* Add hover effect for navigation links */
+nav a:hover {
+  color: #3448f9; /* Highlight color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Add hover effect for buttons */
+.btn:hover {
+  background: #3448f9/*ker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Add a consistent background for the mission page */
+main {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+/* Specific background for the mission page */
+body.mission-page {
+  background: url('s2.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff; /* Ensure text is readable */
+}
+/* Animation for "A single rupee counts!" */
+.animated-text {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* Navigation Links */
+nav a {
+  display: inline-block;
+  color: #f5f5f5; /* Lighter text for navigation links */
+  text-decoration: none;
+  margin: 0 30px; /* Increased spacing between navigation links */
+  font-size: 1.2rem; /* Increased font size for bigger tabs */
+  padding: 10px 20px; /* Added padding for larger clickable area */
+  border-radius: 5px; /* Optional: Rounded corners for a modern look */
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background: #007BFF; /* Blue background on hover */
+  color: #FFFFFF; /* White text on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+/* Style for the credits list */
+main ul {
+  list-style-position: inside; /* Ensure bullets are inside the container */
+  padding-left: 0; /* Remove default padding */
+  text-align: left; /* Align text to the left */
+  margin: 20px auto; /* Center the list within the page */
+  max-width: 600px; /* Limit the width of the list */
+}
+
+main ul li {
+  margin-bottom: 10px; /* Add spacing between list items */
+  font-size: 1rem; /* Adjust font size for readability */
+  line-height: 1.5; /* Improve line spacing */
+}
+
+main ul li a {
+  color: #007BFF; /* Blue color for email links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+main ul li a:hover {
+  text-decoration: underline; /* Add underline on hover for emphasis */
+}
+/* Background for the donate page */
+body.donate-page {
+  background: url('p3.png') no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  color: #fff; /* Ensure text is readable on the background */
+}
+/* General body styling for all pages */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+/* Main content styling */
+main {
+  flex: 1; /* Allow the main content to grow and take up available space */
+  padding: 20px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: #fff;
+  font-size: 0.8rem;
+}
+/* Background for the credits page */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body.credits-page {
+  background: url('p4.png') no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  color: #fff; /* Ensure text is readable on the background */
+}
