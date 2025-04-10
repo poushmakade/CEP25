@@ -219,3 +219,56 @@ body.credits-page {
   background-size: cover; /* Ensure the image covers the entire viewport */
   color: #fff; /* Ensure text is readable on the background */
 }
+/* Add spacing between buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px; /* Add margin to create space between buttons */
+  background: #007BFF; /* Blue button */
+  color: #FFFFFF; /* White text */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056B3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+/* Style for the header h1 (logo) */
+header h1 {
+  font-size: 3rem; /* Keep the logo styling */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px; /* Add space below the h1 */
+  color: #ffffff;
+}
+
+/* Style for the navigation */
+header nav {
+  text-align: center;
+} 
+/* Animation for the thank-you message */
+main h2 {
+  font-size: 2.5rem; /* Adjust font size */
+  color: #4799f1; /* Blue color for the text */
+  text-align: center;
+  animation: fadeInScale 2s ease-in-out; /* Apply animation */
+}
+
+/* Keyframes for fade-in and scale effect */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Start slightly smaller */
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05); /* Slightly larger in the middle */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* End at normal size */
+  }
+}
