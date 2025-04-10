@@ -102,9 +102,10 @@ nav a:hover {
 
 /* Add hover effect for buttons */
 .btn:hover {
-  background: #3448f9/*ker shade on hover */
+  background: #3448f9;/*ker shade on hover */
   transform: scale(1.05); /* Slight zoom effect */
 }
+
 
 /* Add a consistent background for the mission page */
 main {
