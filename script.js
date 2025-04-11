@@ -1,5 +1,5 @@
 document.getElementById('donationForm').addEventListener('submit', function (e) {
-  e.preventDefault(); // Prevent form submission
+  e.preventDefault(); // Prevent the default form submission behavior
 
   // Clear previous error messages
   document.querySelectorAll('.error-message').forEach((msg) => (msg.style.display = 'none'));
@@ -42,9 +42,8 @@ document.getElementById('donationForm').addEventListener('submit', function (e) 
     isValid = false;
   }
 
-  // If all fields are valid, show a thank-you message
+  // If all fields are valid, redirect to thankyou.html
   if (isValid) {
-    alert('Thank you for your donation!');
-    this.reset(); // Reset the form
+    window.location.href = 'thankyou.html'; // Redirect to the thank-you page
   }
 });
