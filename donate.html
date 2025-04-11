@@ -16,23 +16,52 @@
       <a href="credits.html">Credits</a>
     </nav>
   </header>
+  <section class="donation-progress">
+    <h3>Donation Progress</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 60%;">₹60,000 of ₹100,000</div>
+    </div>
+  </section>
 
   <div class="animated-text">
     <p>A single rupee counts!</p>
   </div>
-
+  <section class="impact-metrics">
+    <h3>Your Impact</h3>
+    <ul>
+      <li>₹100 = 1 Desk for a Child</li>
+      <li>₹500 = 1 Month of School Supplies</li>
+      <li>₹1,000 = 1 Classroom Painted</li>
+    </ul>
+  </section>
+  
   <main>
     <h2>Make a Donation</h2>
     <p>Your contribution can make a significant difference in the lives of students at NANDANWAN DURBAL MANASK MULANCHI SHALA. Every rupee you donate will go towards improving their learning environment and providing them with the resources they need to succeed.</p>
     <form id="donationForm">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="amount">Donation Amount:</label>
-      <input type="number" id="amount" name="amount" required>
-      <a href="thankyou.html" class="btn">Donate Now!</a>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      <small class="error-message" id="nameError"></small>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <small class="error-message" id="emailError"></small>
+  
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+      <small class="error-message" id="phoneError"></small>
+  
+      <label for="amount">Donation Amount (₹):</label>
+      <input type="number" id="amount" name="amount" placeholder="Enter donation amount" min="1" required>
+      <small class="error-message" id="amountError"></small>
+  
+      <label for="message">Message (Optional):</label>
+      <textarea id="message" name="message" placeholder="Leave a message for us!!"></textarea>
+  
+      <button type="submit" class="btn">Donate Now!</button>
     </form>
   </main>
-
+ 
   <footer>
     <p>&copy; 2025 HelpingHands. All rights reserved.</p>
   </footer>
